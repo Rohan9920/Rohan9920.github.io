@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IS 445 - Assignment 10">
+  <meta property="og:description" content="Analyze distribution of total no. of floors in buildings in different counties and agencies.">
+  <meta property="og:image" content="assets/pngs/buildings.png">
+
+  <title>IS 445 - Assignment 10</title>
+  <meta name="description" content="Analyze distribution of total no. of floors in buildings in different counties and agencies.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/online_cv_public/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/online_cv_public/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/online_cv_public/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/online_cv_public/"><h5><b>PossibleCorg</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/online_cv_public/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/online_cv_public/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/online_cv_public/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="visualization-1---count-of-buildings-binned-by-floors-per-county">Visualization 1 - Count of buildings binned by floors per county</h1>
+
+<p>The below visualization depicts the count of buildings for each category of binner floors in each county. It gives an idea about the structure of buildings in a county. It also gives a hint if a county has more commercial buildings or if it is a more residential area.</p>
+
+<p>In this visualization, I have used the vega-lite json coding style and used ‘rect’ for marks. My other encodings include County on the X axis and total floors on the Y axis that have been binned.</p>
+
+<p>The default color scheme has been used. The different colors indicate the range of number of buildings from which goes up to 500.</p>
+
+<p>The dataset has been used for the visualization as is. There were no requirements for any external transformations. Null and NA values had been checked and none were found.</p>
+
+<p>The same vega-lite code was chosen from HW9. The specifications had to be added to</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alt.Chart.from_dict()
+</code></pre></div></div>
+<p>and comments had to be replaced from ‘//’ to ‘#’.</p>
+
+<vegachart schema-url="/online_cv_public/assets/json/heat_map.json" style="width: 100%"></vegachart>
+
+<h1 id="visualization-2---number-of-buildings-per-agency">Visualization 2 - Number of buildings per agency</h1>
+
+<p>The following visualization displays count of buildings per agency. There is atleast 1 record for each agency but due to the short bar height, some of them seem to be 0.</p>
+
+<p>Similar to the above plot, vega-lite coding style has been used in this visualization. ‘bar’ has been used for marks and other encodings include agency name on the X axis and count of buildings on the Y axis.</p>
+
+<p>This visualization being a histogram does not have any column for color parameter. The default color scheme has been used.</p>
+
+<p>Similar to the above visualization, no external data transformations were required for this plot. The distribution was straight forward and the dataset could be used as is.</p>
+
+<p>The vega lite specification done for HW9 has been added in</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alt.Chart.from_dict()
+</code></pre></div></div>
+
+<p>and comments had to be replaced from ‘//’ to ‘#’.</p>
+
+<vegachart schema-url="/online_cv_public/assets/json/hist.json" style="width: 100%"></vegachart>
+
+<h1 id="visualization-3---interactivity">Visualization 3 - Interactivity</h1>
+
+<p>The below visualization consolidates the above 2 plots and demonstrates interactivity between them. The ‘brush’ parameter has been used as a window selector. The adjacent histogram then adjusts itself based on the window selected.</p>
+
+<p>Using this interactive feature the user can have a look at the ditribution of count of buildings for the desired county or no. of floors. The non-interactive visualization was a bit cluttered and did not allow the user to pick required counties.</p>
+
+<p>Another addition to this visualization could be adding a dropdown which would allow the user to select a county directly from the list instead of having to find it on the X axis.</p>
+
+<vegachart schema-url="/online_cv_public/assets/json/dashboard.json" style="width: 100%"></vegachart>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week11/prep_notebook_week11.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1769ff'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-behance fa-1x"></i>
+    </a><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.facebook.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#3b5998'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/jnaiman"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://medium.com/@your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitch.tv/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#6441a5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitch fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.vimeo.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#162221'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-vimeo-v fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/online_cv_public/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/online_cv_public/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/online_cv_public/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/online_cv_public/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
