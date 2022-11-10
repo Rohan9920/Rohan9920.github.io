@@ -13,15 +13,15 @@ custom_js:
 
 # Visualization 1 - Count of buildings binned by floors per county
 
-The below visualization depicts the count of buildings for each category of binner floors in each county. It gives an idea about the structure of buildings in a county. It also gives a hint if a county has more commercial buildings or if it is a more residential area.
+The below visualization depicts the count of buildings for each category of binned floors in each county. It gives an idea about the structure of buildings in a county. It also gives a hint if a county has more commercial buildings or if it is a residential area.
 
-In this visualization, I have used the vega-lite json coding style and used 'rect' for marks. My other encodings include County on the X axis and total floors on the Y axis that have been binned.
+In this visualization, I have used the vega-lite json coding style and used 'rect' for marks. My other encodings include 'county' on the X axis and total floors on the Y axis that have been binned.
 
-The default color scheme has been used. The different colors indicate the range of number of buildings from which goes up to 500.
+The default color scheme has been used. The different colors indicate the range of number of buildings which goes up to 500.
 
-The dataset has been used for the visualization as is. There were no requirements for any external transformations. Null and NA values had been checked and none were found.
+No transformations have been made for the dataset. 
 
-The same vega-lite code was chosen from HW9. The specifications had to be added to 
+The same vega-lite code was chosen from HW9. The specifications had to be added inside 
 ```
 alt.Chart.from_dict()
 ```
@@ -31,7 +31,7 @@ and comments had to be replaced from '//' to '#'.
 
 # Visualization 2 - Number of buildings per agency
 
-The following visualization displays count of buildings per agency. There is atleast 1 record for each agency but due to the short bar height, some of them seem to be 0.
+The following visualization displays the count of buildings per agency. There is atleast 1 record for each agency but due to the short bar height, some of them seem to be 0.
 
 Similar to the above plot, vega-lite coding style has been used in this visualization. 'bar' has been used for marks and other encodings include agency name on the X axis and count of buildings on the Y axis. 
 

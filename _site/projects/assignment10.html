@@ -75,15 +75,15 @@
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="visualization-1---count-of-buildings-binned-by-floors-per-county">Visualization 1 - Count of buildings binned by floors per county</h1>
 
-<p>The below visualization depicts the count of buildings for each category of binner floors in each county. It gives an idea about the structure of buildings in a county. It also gives a hint if a county has more commercial buildings or if it is a more residential area.</p>
+<p>The below visualization depicts the count of buildings for each category of binned floors in each county. It gives an idea about the structure of buildings in a county. It also gives a hint if a county has more commercial buildings or if it is a residential area.</p>
 
-<p>In this visualization, I have used the vega-lite json coding style and used ‘rect’ for marks. My other encodings include County on the X axis and total floors on the Y axis that have been binned.</p>
+<p>In this visualization, I have used the vega-lite json coding style and used ‘rect’ for marks. My other encodings include ‘county’ on the X axis and total floors on the Y axis that have been binned.</p>
 
-<p>The default color scheme has been used. The different colors indicate the range of number of buildings from which goes up to 500.</p>
+<p>The default color scheme has been used. The different colors indicate the range of number of buildings which goes up to 500.</p>
 
-<p>The dataset has been used for the visualization as is. There were no requirements for any external transformations. Null and NA values had been checked and none were found.</p>
+<p>No transformations have been made for the dataset.</p>
 
-<p>The same vega-lite code was chosen from HW9. The specifications had to be added to</p>
+<p>The same vega-lite code was chosen from HW9. The specifications had to be added inside</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alt.Chart.from_dict()
 </code></pre></div></div>
 <p>and comments had to be replaced from ‘//’ to ‘#’.</p>
@@ -92,7 +92,7 @@
 
 <h1 id="visualization-2---number-of-buildings-per-agency">Visualization 2 - Number of buildings per agency</h1>
 
-<p>The following visualization displays count of buildings per agency. There is atleast 1 record for each agency but due to the short bar height, some of them seem to be 0.</p>
+<p>The following visualization displays the count of buildings per agency. There is atleast 1 record for each agency but due to the short bar height, some of them seem to be 0.</p>
 
 <p>Similar to the above plot, vega-lite coding style has been used in this visualization. ‘bar’ has been used for marks and other encodings include agency name on the X axis and count of buildings on the Y axis.</p>
 
