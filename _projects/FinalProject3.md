@@ -1,7 +1,7 @@
 ---
 name: IS 445 - Final Project
 tools: [Python, altair, vega-lite]
-image: assets/pngs/buildings.png
+image: assets/pngs/spill_accidents.png
 description: Analyze distribution of total no. of floors in buildings in different counties and agencies.
 custom_js:
   - vega.min
@@ -42,6 +42,12 @@ The first contextual visualization depicts the number of injuries cuased due to 
 
 
 The second contextual visualization displays the financial damages caused due to these accidents. Just a mere glance at the visualization shows that there have been high financial damages with 95M$ being the highest in the year 2015.
+
+### References:
+
+1. PDM public report. (n.d.). Retrieved December 3, 2022, from https://portal.phmsa.dot.gov/PDMPublicReport/?url=https%3A%2F%2Fportal.phmsa.dot.gov%2Fanalytics%2Fsaw.dll%3FPortalpages&amp;PortalPath=%2Fshared%2FPublic+Website+Pages%2F_portal%2F10+Year+Incident+Summary+Reports
+
+2. So, K., Christianson, A., Villagomez, A., Rowland-Shea, J., Jackson, C., Sozan, M., Murphy, N., &amp; Jarsulic, M. (2022, October 4). 10 years after Deepwater Horizon, oil spills and accidents are on the rise. Center for American Progress. Retrieved December 3, 2022, from https://www.americanprogress.org/article/10-years-deepwater-horizon-oil-spills-accidents-rise/ 
 
 
 <div class="left">
