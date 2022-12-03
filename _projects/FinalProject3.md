@@ -19,35 +19,38 @@ custom_js:
 
 ## Explanation of the visualization:
 
-Accidents caused due to spill of hazardous materials leads to severe side effects to human life and to the natural environment. The above visualization depicts how has the trend of spill accidents been over the past years in Illinois. To make the visualization easy to interpret, only the top 10 densely populated counties have been chosen.
+Accidents caused due to spill of hazardous materials lead to severe side effects to human life and to the natural environment. The above visualization depicts how has the trend of spill accidents been over the past years in Illinois. To make the visualization easy to interpret, only the top 10 densely populated counties have been chosen.
 
-The desired county can be chosen from the dropdown and the visualization adjusts itself to display the number of spill accidents caused over the past years. These incidents cover all the accidents caused due to leaks, spills, ruptures in containers, illegal dumps, abondoned bags, etc. 
+The desired county can be chosen from the dropdown and the visualization adjusts itself to display the number of spill accidents caused over the past years. The visualization is an interactive bar graph with the default color scheme. These incidents cover all the accidents caused due to leaks, spills, ruptures in containers, illegal dumps, abondoned bags, etc. 
 
-Now, circling back to the title of this visualization. Yes, spill accidents are a matter of concern. The number of spill accidents is huge in the counties in Illinois. The count rose to over 1000 in COOK county in the years 1990 - 1994. These were the incidents that were reported. There could be many such accidents that never made it to the record books.
+Now, circling back to the title of this visualization. Yes, spill accidents are a matter of concern. The number of spill accidents is high in the counties in Illinois. Some of the counties recorded more than 1000 accidents. Moreover, these were only the incidents that were reported. There could be many such accidents that never made it to the record books.
 
-**Note: The X axis and Y axis limit may change if you change the county from the dropdown.** 
+*Note: The X axis and Y axis limit may change if you change the county from the dropdown.* 
 
-However, the central visualization does not convey a clear picture of casualties and financial damages caused in these accidents. The contextual visualizations convey this valuable information. The contextual visualization is not restricted to any county. It displays the consolidated records for Illinois state inclusive of all the counties.
+The central visualization is limited to the accidents reported in the state of Illinois. The contextual visualizations further broaden this study and give a detailed information about the accidents reported in all the states of the USA. Both of the below visualizations have been taken from the official website of the US Department of Transportation.
 
 ## Context visualization 1:
 
-<img src='/assets/pngs/injuries.png'>
+<img src='/assets/pngs/cv1.png'>
 
-
-The first contextual visualization depicts the number of injuries cuased due to hazardous materials spill accidents. These injuries rose to 400 in the year 2015. 
+The above visualization displays the heatmap of hazardous liquid accidents in the US. Texas and Oklahoma seem to be the hot spots for these accidents. Western states reported very low number of accidents. 
 
 ## Context visualization 2:
 
-<img src='/assets/pngs/damages.png'>
+<img src='/assets/pngs/cv2.png'>
 
+This visualization shows the complex network of pipelines throughout the United States. This would help understand which states would be more prone to accidents and preventive measures can be applied accordingly. There seems to be a heavy network of hazardous liquid in the state of Illinois.
 
-The second contextual visualization displays the financial damages caused due to these accidents. Just a mere glance at the visualization shows that there have been high financial damages with 95M$ being the highest in the year 2015.
+The contextual visualizations analyze the liquid accidents in the United States supplementing the interactive visualization that focuses on all types of hazardous accidents and spills in Illinois. 
+
+*Note: The python analysis notebook was going beyond the 100 MB github upload limit. The dataset was occupying 37 MB of space. However, the resulting ipynb notebook ended up consuming 110 MB of space. I had to switch to git lfs to accomodate my analysis file. However, it is not being rendered properly on github. Users would need to download the file to access the code to the interactive visualization.*
+
 
 ### References:
 
-1. PDM public report. (n.d.). Retrieved December 3, 2022, from https://portal.phmsa.dot.gov/PDMPublicReport/?url=https%3A%2F%2Fportal.phmsa.dot.gov%2Fanalytics%2Fsaw.dll%3FPortalpages&amp;PortalPath=%2Fshared%2FPublic+Website+Pages%2F_portal%2F10+Year+Incident+Summary+Reports
+1. Data Visualization Overview. PHMSA. (n.d.). Retrieved December 3, 2022, from <https://www.phmsa.dot.gov/data-and-statistics/pipeline/data-visualization-overview>  
 
-2. So, K., Christianson, A., Villagomez, A., Rowland-Shea, J., Jackson, C., Sozan, M., Murphy, N., &amp; Jarsulic, M. (2022, October 4). 10 years after Deepwater Horizon, oil spills and accidents are on the rise. Center for American Progress. Retrieved December 3, 2022, from https://www.americanprogress.org/article/10-years-deepwater-horizon-oil-spills-accidents-rise/ 
+2. So, K., Christianson, A., Villagomez, A., Rowland-Shea, J., Jackson, C., Sozan, M., Murphy, N., &amp; Jarsulic, M. (2022, October 4). 10 years after Deepwater Horizon, oil spills and accidents are on the rise. Center for American Progress. Retrieved December 3, 2022, from <https://www.americanprogress.org/article/10-years-deepwater-horizon-oil-spills-accidents-rise/> 
 
 
 <div class="left">
