@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="I may or may not be a corgi.">
-  <meta property="og:image" content="https://dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg">
+  <meta property="og:title" content="IS 445 - Final Project">
+  <meta property="og:description" content="Analyze distribution of total no. of floors in buildings in different counties and agencies.">
+  <meta property="og:image" content="assets/pngs/buildings.png">
 
-  <title>Projects</title>
-  <meta name="description" content="I may or may not be a corgi.">
+  <title>IS 445 - Final Project</title>
+  <meta name="description" content="Analyze distribution of total no. of floors in buildings in different counties and agencies.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -72,49 +72,51 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="do-you-need-to-worry-about-spill-accidents">Do you need to worry about spill accidents?</h1>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-vega-lite-project" class="project card text-themed"><img id="vega-lite-example-project-img" class="card-img-top" src="/assets/pngs/cars.png" alt="Vega Lite Example Project" /><div class="card-body">
-      <h5 id="vega-lite-example-project-name" class="card-title">Vega Lite Example Project
-      </h5>
-      <p id="vega-lite-example-project-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="vega-lite-example-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<p><br /></p>
+
+<vegachart schema-url="/assets/json/interactive_viz.json" style="width: 100%"></vegachart>
+
+<h2 id="explanation-of-the-visualization">Explanation of the visualization:</h2>
+
+<p>Accidents caused due to spill of hazardous materials leads to severe side effects to human life and to the natural environment. The above visualization depicts how has the trend of spill accidents been over the past years in Illinois. To make the visualization easy to interpret, only the top 10 densely populated counties have been chosen.</p>
+
+<p>The desired county can be chosen from the dropdown and the visualization adjusts itself to display the number of spill accidents caused over the past years. These incidents cover all the accidents caused due to leaks, spills, ruptures in containers, illegal dumps, abondoned bags, etc.</p>
+
+<p>Now, circling back to the title of this visualization. Yes, spill accidents are a matter of concern. The number of spill accidents is huge in the counties in Illinois. The count rose to over 1000 in COOK county in the years 1990 - 1994. These were the incidents that were reported. There could be many such accidents that never made it to the record books.</p>
+
+<p><strong>Note: The X axis and Y axis limit may change if you change the county from the dropdown.</strong></p>
+
+<p>However, the central visualization does not convey a clear picture of casualties and financial damages caused in these accidents. The contextual visualizations convey this valuable information. The contextual visualization is not restricted to any county. It displays the consolidated records for Illinois state inclusive of all the counties.</p>
+
+<h2 id="context-visualization-1">Context visualization 1:</h2>
+
+<p><img src="/assets/pngs/injuries.png" /></p>
+
+<p>The first contextual visualization depicts the number of injuries cuased due to hazardous materials spill accidents. These injuries rose to 400 in the year 2015.</p>
+
+<h2 id="context-visualization-2">Context visualization 2:</h2>
+
+<p><img src="/assets/pngs/damages.png" /></p>
+
+<p>The second contextual visualization displays the financial damages caused due to these accidents. Just a mere glance at the visualization shows that there have been high financial damages with 95M$ being the highest in the year 2015.</p>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  The Data
+</a>
 </div>
 
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/assignment10" class="project card text-themed"><img id="is-445-assignment-10-img" class="card-img-top" src="/assets/pngs/buildings.png" alt="IS 445 - Assignment 10" /><div class="card-body">
-      <h5 id="is-445-assignment-10-name" class="card-title">IS 445 - Assignment 10
-      </h5>
-      <p id="is-445-assignment-10-desc" class="card-text">Analyze distribution of total no. of floors in buildings in different counties and agencies.</p>
-      <p id="is-445-assignment-10-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">altair</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
-</div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/finalproject3" class="project card text-themed"><img id="is-445-final-project-img" class="card-img-top" src="/assets/pngs/buildings.png" alt="IS 445 - Final Project" /><div class="card-body">
-      <h5 id="is-445-final-project-name" class="card-title">IS 445 - Final Project
-      </h5>
-      <p id="is-445-final-project-desc" class="card-text">Analyze distribution of total no. of floors in buildings in different counties and agencies.</p>
-      <p id="is-445-final-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">altair</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
-</div>
-
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Rohan9920/Rohan9920.github.io/blob/main/mudgalkar-rohan-assignment10.ipynb">
+  The Analysis
+</a>
 </div>
 
 
+</div>
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -181,6 +183,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
